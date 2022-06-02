@@ -1,4 +1,4 @@
-package ru.netology.ru.netology.test;
+package ru.netology.test;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,7 +21,6 @@ public class DeliveryTest {
 
     @Test
     void shouldOrderCardDelivery() {
-
         $("[data-test-id = 'city'] input").setValue(client.getCity());
         $("[data-test-id = 'date'] input").sendKeys(Keys.chord(Keys.CONTROL, "a"), Keys.DELETE);
         $("[data-test-id = 'date'] input").setValue(client.getFirstDate());
